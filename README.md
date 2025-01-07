@@ -190,8 +190,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 📧 Contact
 Issues: Use GitHub Issues
-Email: your.email@example.com
-LinkedIn: Your Profile
+Email: 4rm4nd1nh0_br@protonmail.com
+LinkedIn: [(https://www.linkedin.com/in/armandosaboia)](https://www.linkedin.com/in/armandosaboia)
 ⭐ Support
 If you find this repository useful, please consider giving it a star!
 
