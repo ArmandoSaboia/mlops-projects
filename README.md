@@ -131,7 +131,7 @@ A comprehensive collection of Machine Learning Operations (MLOps) projects imple
 - **Monitoring**: Prometheus, Grafana
 
 ## 📂 Repository Structure
-
+```bash
 mlops-projects/ 
 ├── projects/ # All projects 
 │ ├── customer_insights/ # Customer Analytics 
