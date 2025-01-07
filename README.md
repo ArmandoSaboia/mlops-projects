@@ -133,26 +133,26 @@ A comprehensive collection of Machine Learning Operations (MLOps) projects imple
 ## 📂 Repository Structure
 ```bash
 mlops-projects/ 
-├── projects/ # All projects 
-│ ├── customer_insights/ # Customer Analytics 
-│ ├── sales_marketing/ # Sales and Marketing 
-│ ├── operational_efficiency/ # Operational Efficiency 
-│ ├── product_development/ # Product Development 
-│ ├── fraud_detection/ # Fraud Detection 
-│ ├── financial_forecasting/ # Financial Forecasting 
-│ ├── hr_talent_management/ # HR and Talent 
-│ ├── healthcare_life_sciences/ # Healthcare 
-│ ├── retail_ecommerce/ # Retail and E-commerce 
-│ ├── cybersecurity/ # Cybersecurity 
-│ ├── energy_sustainability/ # Energy and Sustainability 
-│ ├── real_estate/ # Real Estate 
-│ ├── transportation_logistics/ # Transportation 
-│ ├── media_entertainment/ # Media and Entertainment 
-│ ├── agriculture/ # Agriculture 
-│ ├── legal_compliance/ # Legal and Compliance 
-│ ├── education/ # Education 
-│ └── telecommunications/ # Telecommunications 
-├── templates/ # Project templates 
+├── projects/  
+│ ├── customer_insights/ 
+│ ├── sales_marketing/ 
+│ ├── operational_efficiency/ 
+│ ├── product_development/  
+│ ├── fraud_detection/ 
+│ ├── financial_forecasting/ 
+│ ├── hr_talent_management/  
+│ ├── healthcare_life_sciences/ 
+│ ├── retail_ecommerce/  
+│ ├── cybersecurity/ 
+│ ├── energy_sustainability/ 
+│ ├── real_estate/
+│ ├── transportation_logistics/
+│ ├── media_entertainment/ 
+│ ├── agriculture/ 
+│ ├── legal_compliance/ 
+│ ├── education/ 
+│ └── telecommunications/
+├── templates/ 
 │ ├── project_structure/ 
 │ │   └── README.md
 │ ├── report_template/ 
@@ -160,6 +160,7 @@ mlops-projects/
 │ └── presentation_template/ 
 ├── docs/ # Documentation 
 └── utils/ # Shared utilities
+```bash
 
 ## 🚀 Getting Started
 ```bash
