@@ -131,9 +131,16 @@ A comprehensive collection of Machine Learning Operations (MLOps) projects imple
 - **Monitoring**: Prometheus, Grafana
 
 ## 📂 Repository Structure
-mlops-projects/ ├── projects/ 
-# All projects ├── templates/ 
-# Project templates │ ├── project_structure/ │ ├── report_template/ │ └── presentation_template/ ├── docs/ # Documentation └── utils/ 
+mlops-projects/ 
+├── projects/ 
+# All projects 
+├── templates/ 
+# Project templates 
+│ ├── project_structure/ 
+│ ├── report_template/ 
+│ └── presentation_template/ 
+├── docs/ # Documentation 
+└── utils/ 
 # Shared utilities
 
 
