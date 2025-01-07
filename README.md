@@ -162,9 +162,8 @@ mlops-projects/
 └── utils/ # Shared utilities
 
 ## 🚀 Getting Started
-
-1. **Clone the Repository**
 ```bash
+1. **Clone the Repository**
 git clone https://github.com/ArmandoSaboia/mlops-projects.git
 cd mlops-projects
 
@@ -175,21 +174,22 @@ cd mlops-projects
 3. **Set Up Environment**
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements.txt ´´´
 
-📚 Documentation
+### 📚 Documentation
 Contributing Guidelines
 Environment Setup
 Project Templates
 Best Practices
-🤝 Contributing
+
+### 🤝 Contributing
 We welcome contributions! Please see our Contributing Guidelines for details.
 
-📝 License
+### 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-📧 Contact
+### 📧 Contact
 Issues: Use GitHub Issues
 Email: 4rm4nd1nh0_br@protonmail.com
-LinkedIn: [(https://www.linkedin.com/in/armandosaboia)]
+LinkedIn: https://www.linkedin.com/in/armandosaboia
 If you find this repository useful, please consider giving it a star!
