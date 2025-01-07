@@ -131,18 +131,35 @@ A comprehensive collection of Machine Learning Operations (MLOps) projects imple
 - **Monitoring**: Prometheus, Grafana
 
 ## 📂 Repository Structure
+
 mlops-projects/ 
-├── projects/ 
-# All projects 
-├── templates/ 
-# Project templates 
+├── projects/ # All projects 
+│ ├── customer_insights/ # Customer Analytics 
+│ ├── sales_marketing/ # Sales and Marketing 
+│ ├── operational_efficiency/ # Operational Efficiency 
+│ ├── product_development/ # Product Development 
+│ ├── fraud_detection/ # Fraud Detection 
+│ ├── financial_forecasting/ # Financial Forecasting 
+│ ├── hr_talent_management/ # HR and Talent 
+│ ├── healthcare_life_sciences/ # Healthcare 
+│ ├── retail_ecommerce/ # Retail and E-commerce 
+│ ├── cybersecurity/ # Cybersecurity 
+│ ├── energy_sustainability/ # Energy and Sustainability 
+│ ├── real_estate/ # Real Estate 
+│ ├── transportation_logistics/ # Transportation 
+│ ├── media_entertainment/ # Media and Entertainment 
+│ ├── agriculture/ # Agriculture 
+│ ├── legal_compliance/ # Legal and Compliance 
+│ ├── education/ # Education 
+│ └── telecommunications/ # Telecommunications 
+├── templates/ # Project templates 
 │ ├── project_structure/ 
+│ │   └── README.md
 │ ├── report_template/ 
+│ │   └── template.md
 │ └── presentation_template/ 
 ├── docs/ # Documentation 
-└── utils/ 
-# Shared utilities
-
+└── utils/ # Shared utilities
 
 ## 🚀 Getting Started
 
