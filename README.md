@@ -191,13 +191,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 📧 Contact
 Issues: Use GitHub Issues
 Email: 4rm4nd1nh0_br@protonmail.com
-LinkedIn: [(https://www.linkedin.com/in/armandosaboia)](https://www.linkedin.com/in/armandosaboia)
-⭐ Support
+LinkedIn: [(https://www.linkedin.com/in/armandosaboia)]
 If you find this repository useful, please consider giving it a star!
-
-
-Would you like me to:
-1. Add more specific details about any particular project?
-2. Create individual README templates for each project?
-3. Add more technical details to any section?
-4. Include setup instructions for specific tools or technologies?
