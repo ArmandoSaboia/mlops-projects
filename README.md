@@ -171,11 +171,13 @@ cd mlops-projects
 ```
 ### 2. Choose a Project
 # Navigate to specific project directory
+```bash
 cd projects/<project_name>
-
+```
 # Review project documentation
+```bash
 cat README.md
-
+```
 ### 3. Set Up Environment
 # Create virtual environment
 python -m venv venv
