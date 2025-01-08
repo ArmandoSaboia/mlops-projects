@@ -567,8 +567,8 @@ git push origin feature/amazing-feature
 - **Name: Armando Saboia**
 - **Role: MLOps Engineer Enthusiast**
 - **Location: Brazil 🇧🇷**
-- **Email**: [4rm4nd1nh0_br@protonmail.com](mailto:4rm4nd1nh0_br@protonmail.com)**
-- **LinkedIn**: [Armando Saboia](https://www.linkedin.com/in/armandosaboia)**
+- **Email**: [4rm4nd1nh0_br@protonmail.com](mailto:4rm4nd1nh0_br@protonmail.com)
+- **LinkedIn**: [Armando Saboia](https://www.linkedin.com/in/armandosaboia)
 
 #### Experience
 - **`2+ years experience`**
