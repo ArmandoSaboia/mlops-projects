@@ -528,7 +528,7 @@ git push origin feature/amazing-feature
 
 6. **Open a Pull Request**
 #### Steps:
-- **[Visit Pull Requests](https://github.com/ArmandoSaboia/mlops-projects/pulls)
+- [Visit Pull Requests](https://github.com/ArmandoSaboia/mlops-projects/pulls)
 - **Click "New Pull Request"**
 - **Select your branch**
 - **Fill the template**
