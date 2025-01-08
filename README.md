@@ -168,7 +168,7 @@ mlops-projects/
 ```bash
 git clone https://github.com/ArmandoSaboia/mlops-projects.git
 cd mlops-projects
-
+```
 ### 2. Choose a Project
 # Navigate to specific project directory
 cd projects/<project_name>
