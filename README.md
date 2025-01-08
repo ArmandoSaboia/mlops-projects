@@ -486,26 +486,25 @@ vim templates/project_structure/config.yaml
 ### Troubleshooting
 #### Common Issues
 1. [**Installation Problems**](./docs/troubleshooting.md#installation)
-   - Dependencies
-   - Environment setup
-   - Tool conflicts
+   - **Dependencies**
+   - **Environment setup**
+   - **Tool conflicts**
 
 2. [**Runtime Errors**](./docs/troubleshooting.md#runtime)
-   - Memory issues
-   - Performance problems
-   - Integration errors
+   - **Memory issues**
+   - **Performance problems**
+   - **Integration errors**
 
 #### Support Channels
-- [**Stack Overflow**](https://stackoverflow.com/questions/tagged/*****/mlops)
-- [**GitHub Discussions**](https://github.com/ArmandoSaboia/mlops-projects/discussions)
-- [**Discord Community**](https://discord.gg/******/mlops)
+- **[**Stack Overflow**](https://stackoverflow.com/questions/tagged/*****/mlops)
+- **[**GitHub Discussions**](https://github.com/ArmandoSaboia/mlops-projects/discussions)
+- **[**Discord Community**](https://discord.gg/******/mlops)
 
 ## 🤝 Contributing
 
 #### How to Contribute
 1. **Fork the Repository**
 ```bash
-## Clone your fork
 git clone https://github.com/ArmandoSaboia/mlops-projects.git
 cd mlops-projects
 ```
