@@ -160,37 +160,389 @@ mlops-projects/
 │ └── presentation_template/ 
 ├── docs/ # Documentation 
 └── utils/ # Shared utilities
-```bash
+
 
 ## 🚀 Getting Started
+
+### 1. Clone the Repository
 ```bash
-1. **Clone the Repository**
 git clone https://github.com/ArmandoSaboia/mlops-projects.git
 cd mlops-projects
 
-2. **Choose a Project**
-- **Navigate to specific project directory**
-- **Follow project-specific README**
+### 2. Choose a Project
+# Navigate to specific project directory
+cd projects/<project_name>
 
-3. **Set Up Environment**
+# Review project documentation
+cat README.md
+
+### 3. Set Up Environment
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt ´´´
 
-### 📚 Documentation
-Contributing Guidelines
-Environment Setup
-Project Templates
-Best Practices
+# Activate virtual environment
+source venv/bin/activate  # Linux/macOS
+# or
+venv\Scripts\activate    # Windows
 
-### 🤝 Contributing
-We welcome contributions! Please see our Contributing Guidelines for details.
+# Install dependencies
+pip install -r requirements.txt
 
-### 📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📚 Documentation
+### Setup and Installation
+#### Prerequisites
+- Python 3.8+
+- Git 2.x+
+- Docker & Docker Compose
+- Kubernetes (optional)
+- MLflow
+- DVC
 
-### 📧 Contact
-Issues: Use GitHub Issues
-Email: 4rm4nd1nh0_br@protonmail.com
-LinkedIn: https://www.linkedin.com/in/armandosaboia
-If you find this repository useful, please consider giving it a star!
+#### Environment Setup
+1. **System Dependencies**
+```bash
+# Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install -y python3.8 python3-pip docker.io docker-compose
+
+# macOS
+brew install python@3.8 docker docker-compose
+
+2. **Python Environment**
+# Create virtual environment
+python3.8 -m venv venv
+
+# Activate environment
+source venv/bin/activate  # Linux/macOS
+# or
+venv\Scripts\activate    # Windows
+
+# Update pip
+pip install --upgrade pip
+
+3. **MLOps Tools Installation**
+# Install core dependencies
+pip install mlflow dvc jupyter numpy pandas scikit-learn
+
+# Install monitoring tools
+pip install prometheus_client grafana-api
+
+# Install deployment tools
+pip install docker kubernetes bentoml
+
+#### Configuration Guide
+1. **Environment Variables**
+# Create .env file
+cp .env.example .env
+
+# Edit with your configurations
+vim .env
+
+2. **MLflow Setup**
+# Start MLflow server
+mlflow server \
+    --backend-store-uri postgresql://user:pass@localhost/mlflow \
+    --default-artifact-root s3://bucket/path \
+    --host 0.0.0.0 \
+    --port 5000
+
+3. **DVC Configuration**
+# Initialize DVC
+dvc init
+
+# Add remote storage
+dvc remote add -d storage s3://bucket/path
+
+#### Project Templates
+1. **Standard Project Structure**
+```bash
+project_name/
+├── data/              
+├── notebooks/        
+├── src/              
+├── tests/            
+├── configs/          
+└── models/
+
+2. **Documentation Templates**
+#### Project Templates
+
+2.1. **Documentation Files**
+   - [`README.md`](./templates/project_structure/README.md): Project overview template
+     ```markdown
+     # Project Name
+
+     ## Overview
+     Brief description of the project and its goals.
+
+     ## Features
+     - Feature 1
+     - Feature 2
+
+     ## Installation
+     Installation instructions...
+     ```
+
+   - [`CONTRIBUTING.md`](./docs/contributing.md): Contribution guidelines
+     ```markdown
+     # Contributing Guidelines
+
+     ## How to Contribute
+     1. Fork the repository
+     2. Create your feature branch
+     3. Make your changes
+     4. Submit a pull request
+
+     ## Code Standards
+     - Follow PEP 8
+     - Write tests
+     - Update documentation
+     ```
+
+   - [`CHANGELOG.md`](./docs/changelog.md): Version history
+     ```markdown
+     # Changelog
+
+     ## [1.0.0] - 2025-01-07
+     ### Added
+     - Initial release
+     - Feature A
+     - Feature B
+
+     ## [0.1.0] - 2024-12-25
+     ### Added
+     - Project setup
+     - Basic functionality
+     ```
+
+2.2. **Configuration Templates**
+   - [`config.yaml`](./templates/project_structure/config.yaml): Project configuration
+     ```yaml
+     project:
+       name: "project_name"
+       version: "1.0.0"
+       description: "Project description"
+     
+     paths:
+       data: "data/"
+       models: "models/"
+       logs: "logs/"
+     
+     mlflow:
+       tracking_uri: "http://localhost:5000"
+       experiment_name: "experiment_1"
+     ```
+
+   - [`params.yaml`](./templates/project_structure/params.yaml): Model parameters
+     ```yaml
+     model:
+       name: "model_name"
+       type: "classifier"
+       parameters:
+         learning_rate: 0.01
+         max_depth: 5
+         n_estimators: 100
+     
+     training:
+       test_size: 0.2
+       random_state: 42
+       cross_validation: 5
+     ```
+
+   - [`metrics.yaml`](./templates/project_structure/metrics.yaml): Evaluation metrics
+     ```yaml
+     metrics:
+       training:
+         - accuracy
+         - precision
+         - recall
+         - f1_score
+       
+       monitoring:
+         - latency
+         - throughput
+         - error_rate
+     ```
+
+3. **Access Templates**
+   ```bash
+   # Copy project template
+   cp -r templates/project_structure/* new_project/
+
+   # View template contents
+   cat templates/project_structure/README.md
+   cat templates/project_structure/config.yaml
+
+4. **   Template Usage**
+#### For new projects:
+# Create new project from template
+./scripts/create_project.sh project_name
+
+#### For existing projects:
+# Update project structure
+./scripts/update_project.sh project_name
+
+5. **Template Customization**
+# Customize templates for your needs
+vim templates/project_structure/README.md
+vim templates/project_structure/config.yaml
+
+## 📚 Resources
+
+### MLOps Tools
+#### Core Tools
+- [**MLflow**](https://mlflow.org/) `v2.8.0`
+  - Experiment tracking
+  - Model registry
+  - Model serving
+- [**DVC**](https://dvc.org/) `v3.0.0`
+  - Data versioning
+  - Pipeline management
+- [**Kubeflow**](https://www.kubeflow.org/) `v1.7`
+  - ML workflow orchestration
+  - Model deployment
+
+#### Monitoring & Observability
+- [**Prometheus**](https://prometheus.io/) `v2.45.0`
+  - Metrics collection
+  - Alert management
+- [**Grafana**](https://grafana.com/) `v10.0.0`
+  - Metrics visualization
+  - Dashboard creation
+
+#### Development Tools
+- [**Poetry**](https://python-poetry.org/) `v1.7.0`
+  - Dependency management
+  - Package publishing
+- [**pre-commit**](https://pre-commit.com/) `v3.5.0`
+  - Code quality checks
+  - Style enforcement
+
+### Project Guides
+#### Getting Started
+1. [**Quick Start Guide**](./docs/quickstart.md) - `10 min read`
+   - Basic setup
+   - First project
+   - Key concepts
+
+2. [**Development Setup**](./docs/development.md) - `15 min read`
+   - Tool installation
+   - Configuration
+   - Best practices
+
+#### Advanced Topics
+1. [**Model Deployment**](./docs/deployment.md) - `20 min read`
+   - Containerization
+   - Kubernetes setup
+   - Monitoring
+
+2. [**CI/CD Pipeline**](./docs/cicd.md) - `25 min read`
+   - GitHub Actions
+   - Testing strategy
+   - Automation
+
+### Troubleshooting
+#### Common Issues
+1. [**Installation Problems**](./docs/troubleshooting.md#installation)
+   - Dependencies
+   - Environment setup
+   - Tool conflicts
+
+2. [**Runtime Errors**](./docs/troubleshooting.md#runtime)
+   - Memory issues
+   - Performance problems
+   - Integration errors
+
+#### Support Channels
+- [**Stack Overflow**](https://stackoverflow.com/questions/tagged/*****/mlops)
+- [**GitHub Discussions**](https://github.com/ArmandoSaboia/mlops-projects/discussions)
+- [**Discord Community**](https://discord.gg/******/mlops)
+
+## 🤝 Contributing
+
+### How to Contribute
+1. **Fork the Repository**
+   ```bash
+   # Clone your fork
+   git clone https://github.com/ArmandoSaboia/mlops-projects.git
+   cd mlops-projects
+
+2. **Create a Feature Branch**
+   ```bash
+   git checkout -b feature/amazing-feature
+
+3. **Make Your Changes**
+# Make changes
+git add .
+git commit -m "Add amazing feature"
+
+4. **Push to Branch**
+git push origin feature/amazing-feature
+
+5. **Open a Pull Request**
+#### Steps:
+• [Visit Pull Requests](https://github.com/ArmandoSaboia/mlops-projects/pulls)
+• Click "New Pull Request" 
+• Select your branch
+• Fill the template
+
+## Guidelines
+
+### Code Standards
+• Follow [PEP 8](https://pep8.org/) style guide
+• Use [Black](https://github.com/psf/black) formatter `v23.9.1`
+• Apply [isort](https://pycqa.github.io/isort/) `v5.12.0`
+• Maintain test coverage `> 80%`
+
+### Documentation
+• Update relevant documentation
+• Follow [Google Style](https://google.github.io/styleguide/pyguide.html) docstrings
+• Include code examples
+• Update [CHANGELOG.md](./CHANGELOG.md)
+
+## 📝 License
+
+### MIT License
+**Copyright (c) 2025 Armando Saboia**
+
+[Full License Text](./LICENSE) - `v1.0.0`
+
+### Terms of Use
+• ✅ Commercial use permitted
+• ✅ Modification allowed
+• ✅ Distribution permitted
+• ❗ Liability limited
+• ❗ No warranty provided
+• ℹ️ License and copyright notice required
+
+## 📧 Contact
+
+### Project Maintainer
+• **Name**: Armando Saboia
+• **Role**: MLOps Engineer Enthusiast
+• **Location**: Brazil 🇧🇷
+• **Email**: [4rm4nd1nh0_br@protonmail.com](mailto:4rm4nd1nh0_br@protonmail.com)
+• **LinkedIn**: [Armando Saboia](https://www.linkedin.com/in/armandosaboia)
+
+#### Experience
+`2+ years experience` | `MLOps enthusiast` | `Open source contributor`
+
+### Support Channels
+
+#### [GitHub Issues](https://github.com/ArmandoSaboia/mlops-projects/issues)
+  • Bug reports
+  • Feature requests
+  • Security concerns
+
+#### [GitHub Discussions](https://github.com/ArmandoSaboia/mlops-projects/discussions)
+  • Q&A
+  • Ideas
+  • Community chat
+
+## ⭐ Support the Project
+
+If you find this repository useful, please consider:
+
+  • Giving it a star ⭐
+  • Sharing with colleagues 🔄
+  • Contributing to its development 🛠️
