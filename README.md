@@ -575,14 +575,14 @@ git push origin feature/amazing-feature
 - **`MLOps enthusiast`**
 - **`Open source contributor`**
 
-## Support Channels
+## 🔧 Support Channels
 
-#### - **[GitHub Issues](https://github.com/ArmandoSaboia/mlops-projects/issues)**
+#### **[GitHub Issues](https://github.com/ArmandoSaboia/mlops-projects/issues)**
   - **Bug reports**
   - **Feature requests**
   - **Security concerns**
 
-#### - **[GitHub Discussions](https://github.com/ArmandoSaboia/mlops-projects/discussions)**
+#### **[GitHub Discussions](https://github.com/ArmandoSaboia/mlops-projects/discussions)**
   - **Q&A**
   - **Ideas**
   - **Community chat**
