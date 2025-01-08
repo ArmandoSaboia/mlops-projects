@@ -162,7 +162,7 @@ mlops-projects/
 └── utils/ # Shared utilities
 
 
-## 🚀 Getting Started
+🚀 Getting Started
 
 ### 1. Clone the Repository
 ```bash
