@@ -580,7 +580,7 @@ git push origin feature/amazing-feature
   - **Feature requests**
   - **Security concerns**
 
-#### [GitHub Discussions](https://github.com/ArmandoSaboia/mlops-projects/discussions)
+- **#### [GitHub Discussions](https://github.com/ArmandoSaboia/mlops-projects/discussions)**
   - **Q&A**
   - **Ideas**
   - **Community chat**
