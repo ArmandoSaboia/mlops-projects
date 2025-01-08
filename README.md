@@ -532,7 +532,7 @@ git push origin feature/amazing-feature
 • Select your branch
 • Fill the template
 
-## Guidelines
+## 📋 Guidelines
 
 ### Code Standards
 • Follow [PEP 8](https://pep8.org/) style guide
