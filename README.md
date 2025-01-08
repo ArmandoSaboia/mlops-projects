@@ -400,30 +400,27 @@ project_name/
      ```
 
 3. **Access Templates**
-   ```bash
-   # Copy project template
-   cp -r templates/project_structure/* new_project/
+```bash
+# Copy project template
+cp -r templates/project_structure/* new_project/
 
-   # View template contents
-   cat templates/project_structure/README.md
-   cat templates/project_structure/config.yaml
-   ```
+# View template contents
+cat templates/project_structure/README.md
+cat templates/project_structure/config.yaml
+```
 
 4. **   Template Usage**
 #### For new projects:
-#### Create new project from template
 ```bash
 ./scripts/create_project.sh project_name
 ```
 
 #### For existing projects:
-#### Update project structure
 ```bash
 ./scripts/update_project.sh project_name
 ```
 
 5. **Template Customization**
-#### Customize templates for your needs
 ```bash
 vim templates/project_structure/README.md
 vim templates/project_structure/config.yaml
@@ -496,9 +493,9 @@ vim templates/project_structure/config.yaml
    - **Integration errors**
 
 #### Support Channels
-- **[**Stack Overflow**](https://stackoverflow.com/questions/tagged/*****/mlops)
-- **[**GitHub Discussions**](https://github.com/ArmandoSaboia/mlops-projects/discussions)
-- **[**Discord Community**](https://discord.gg/******/mlops)
+- [**Stack Overflow**](https://stackoverflow.com/questions/tagged/*****/mlops)
+- [**GitHub Discussions**](https://github.com/ArmandoSaboia/mlops-projects/discussions)
+- [**Discord Community**](https://discord.gg/******/mlops)
 
 ## 🤝 Contributing
 
