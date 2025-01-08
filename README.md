@@ -504,11 +504,11 @@ vim templates/project_structure/config.yaml
 
 #### How to Contribute
 1. **Fork the Repository**
-   ```bash
-   ## Clone your fork
-   git clone https://github.com/ArmandoSaboia/mlops-projects.git
-   cd mlops-projects
-   ```
+```bash
+## Clone your fork
+git clone https://github.com/ArmandoSaboia/mlops-projects.git
+cd mlops-projects
+```
 
 2. **Create a Feature Branch**
 ```bash
@@ -527,7 +527,7 @@ git push origin feature/amazing-feature
 ```
 
 5. **Open a Pull Request**
-#### - Steps:
+#### Steps:
 - [Visit Pull Requests](https://github.com/ArmandoSaboia/mlops-projects/pulls)
 - **Click "New Pull Request"**
 - **Select your branch**
