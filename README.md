@@ -170,22 +170,27 @@ git clone https://github.com/ArmandoSaboia/mlops-projects.git
 cd mlops-projects
 ```
 ### 2. Choose a Project
-# Navigate to specific project directory
+#### Navigate to specific project directory
 ```bash
 cd projects/<project_name>
 ```
-# Review project documentation
+#### Review project documentation
 ```bash
 cat README.md
 ```
 ### 3. Set Up Environment
-# Create virtual environment
+#### Create virtual environment
+```bash
 python -m venv venv
-
-# Activate virtual environment
+```
+#### Activate virtual environment
+```bash
 source venv/bin/activate  # Linux/macOS
-# or
+```
+#### or
+```bash
 venv\Scripts\activate    # Windows
+```
 
 # Install dependencies
 pip install -r requirements.txt
