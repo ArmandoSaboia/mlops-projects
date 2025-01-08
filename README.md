@@ -192,9 +192,10 @@ source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate    # Windows
 ```
 
-# Install dependencies
+## Install dependencies
+```bash
 pip install -r requirements.txt
-
+```
 ## 📚 Documentation
 ### Setup and Installation
 #### Prerequisites
