@@ -502,19 +502,20 @@ vim templates/project_structure/config.yaml
 
 ## 🤝 Contributing
 
-### How to Contribute
+#### How to Contribute
 1. **Fork the Repository**
    ```bash
    ## Clone your fork
    git clone https://github.com/ArmandoSaboia/mlops-projects.git
    cd mlops-projects
+   ```
 
 2. **Create a Feature Branch**
    ```bash
    git checkout -b feature/amazing-feature
 
 3. **Make Your Changes**
-# Make changes
+#### Make changes
 ```bash
 git add .
 git commit -m "Add amazing feature"
@@ -527,18 +528,18 @@ git push origin feature/amazing-feature
 
 6. **Open a Pull Request**
 #### Steps:
-• [Visit Pull Requests](https://github.com/ArmandoSaboia/mlops-projects/pulls)
-• Click "New Pull Request" 
-• Select your branch
-• Fill the template
+- **[Visit Pull Requests](https://github.com/ArmandoSaboia/mlops-projects/pulls)
+- **Click "New Pull Request"**
+- **Select your branch**
+- **Fill the template**
 
 ## 📋 Guidelines
 
 ### Code Standards
-• Follow [PEP 8](https://pep8.org/) style guide
-• Use [Black](https://github.com/psf/black) formatter `v23.9.1`
-• Apply [isort](https://pycqa.github.io/isort/) `v5.12.0`
-• Maintain test coverage `> 80%`
+- **Follow [PEP 8](https://pep8.org/) style guide**
+- **Use [Black](https://github.com/psf/black) formatter `v23.9.1`**
+- **Apply [isort](https://pycqa.github.io/isort/) `v5.12.0`**
+- **Maintain test coverage `> 80%`**
 
 ### Documentation
 • Update relevant documentation
