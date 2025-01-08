@@ -554,7 +554,7 @@ git push origin feature/amazing-feature
 [Full License Text](./LICENSE) - `v1.0.0`
 
 ### Terms of Use
-- ** ✅ Commercial use permitted**
+- **✅ Commercial use permitted**
 - **✅ Modification allowed**
 - **✅ Distribution permitted**
 - **❗ Liability limited**
