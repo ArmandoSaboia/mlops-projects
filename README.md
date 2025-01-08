@@ -587,8 +587,7 @@ git push origin feature/amazing-feature
 
 ## ⭐ Support the Project
 
-If you find this repository useful, please consider:
-
-  • **Giving it a star** ⭐
-  • **Sharing with colleagues** 🔄
-  • **Contributing to its development** 🛠️
+**If you find this repository useful, please consider:**
+  • Giving it a star ⭐
+  • Sharing with colleagues 🔄
+  • Contributing to its development 🛠️
