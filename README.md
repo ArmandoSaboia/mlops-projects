@@ -160,9 +160,9 @@ mlops-projects/
 │ └── presentation_template/ 
 ├── docs/ # Documentation 
 └── utils/ # Shared utilities
+```
 
-
-🚀 Getting Started
+## 🚀 Getting Started
 
 ### 1. Clone the Repository
 ```bash
@@ -263,7 +263,7 @@ project_name/
 ├── tests/            
 ├── configs/          
 └── models/
-
+```
 2. **Documentation Templates**
 #### Project Templates
 
