@@ -511,11 +511,11 @@ vim templates/project_structure/config.yaml
    ```
 
 2. **Create a Feature Branch**
-   ```bash
-   git checkout -b feature/amazing-feature
+```bash
+git checkout -b feature/amazing-feature
+```
 
 3. **Make Your Changes**
-#### Make changes
 ```bash
 git add .
 git commit -m "Add amazing feature"
@@ -526,8 +526,8 @@ git commit -m "Add amazing feature"
 git push origin feature/amazing-feature
 ```
 
-6. **Open a Pull Request**
-#### Steps:
+5. **Open a Pull Request**
+#### - Steps:
 - [Visit Pull Requests](https://github.com/ArmandoSaboia/mlops-projects/pulls)
 - **Click "New Pull Request"**
 - **Select your branch**
