@@ -192,10 +192,11 @@ source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate    # Windows
 ```
 
-## Install dependencies
+#### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
+
 ## 📚 Documentation
 ### Setup and Installation
 #### Prerequisites
@@ -208,58 +209,83 @@ pip install -r requirements.txt
 
 #### Environment Setup
 1. **System Dependencies**
+
+#### Ubuntu/Debian
 ```bash
-# Ubuntu/Debian
 sudo apt-get update
 sudo apt-get install -y python3.8 python3-pip docker.io docker-compose
-
-# macOS
+```
+#### macOS
+```bash
 brew install python@3.8 docker docker-compose
+```
 
 2. **Python Environment**
-# Create virtual environment
+#### Create virtual environment
+```bash
 python3.8 -m venv venv
-
-# Activate environment
+```
+#### Activate environment
+```bash
 source venv/bin/activate  # Linux/macOS
-# or
+```
+#### or
+```bash
 venv\Scripts\activate    # Windows
+```
 
-# Update pip
+#### Update pip
+```bash
 pip install --upgrade pip
+```
 
 3. **MLOps Tools Installation**
-# Install core dependencies
+#### Install core dependencies
+```bash
 pip install mlflow dvc jupyter numpy pandas scikit-learn
+```
 
-# Install monitoring tools
+#### Install monitoring tools
+```bash
 pip install prometheus_client grafana-api
+```
 
-# Install deployment tools
+#### Install deployment tools
+```bash
 pip install docker kubernetes bentoml
-
+```
 #### Configuration Guide
 1. **Environment Variables**
-# Create .env file
+#### Create .env file
+```bash
 cp .env.example .env
+```
 
-# Edit with your configurations
+#### Edit with your configurations
+```bash
 vim .env
+```
 
 2. **MLflow Setup**
-# Start MLflow server
+#### Start MLflow server
+```bash
 mlflow server \
     --backend-store-uri postgresql://user:pass@localhost/mlflow \
     --default-artifact-root s3://bucket/path \
     --host 0.0.0.0 \
     --port 5000
+```
 
 3. **DVC Configuration**
-# Initialize DVC
+#### Initialize DVC
+```bash
 dvc init
+```
 
-# Add remote storage
+#### Add remote storage
+```bash
 dvc remote add -d storage s3://bucket/path
+```
 
 #### Project Templates
 1. **Standard Project Structure**
@@ -272,28 +298,29 @@ project_name/
 ├── configs/          
 └── models/
 ```
-2. **Documentation Templates**
+
+2.0. **Documentation Templates**
 #### Project Templates
 
 2.1. **Documentation Files**
    - [`README.md`](./templates/project_structure/README.md): Project overview template
      ```markdown
-     # Project Name
+     #### Project Name
 
-     ## Overview
+     #### Overview
      Brief description of the project and its goals.
 
-     ## Features
+     #### Features
      - Feature 1
      - Feature 2
 
-     ## Installation
+     #### Installation
      Installation instructions...
      ```
 
    - [`CONTRIBUTING.md`](./docs/contributing.md): Contribution guidelines
      ```markdown
-     # Contributing Guidelines
+     #### Contributing Guidelines
 
      ## How to Contribute
      1. Fork the repository
@@ -380,20 +407,27 @@ project_name/
    # View template contents
    cat templates/project_structure/README.md
    cat templates/project_structure/config.yaml
+   ```
 
 4. **   Template Usage**
 #### For new projects:
-# Create new project from template
+#### Create new project from template
+```bash
 ./scripts/create_project.sh project_name
+```
 
 #### For existing projects:
-# Update project structure
+#### Update project structure
+```bash
 ./scripts/update_project.sh project_name
+```
 
 5. **Template Customization**
-# Customize templates for your needs
+#### Customize templates for your needs
+```bash
 vim templates/project_structure/README.md
 vim templates/project_structure/config.yaml
+```
 
 ## 📚 Resources
 
@@ -471,7 +505,7 @@ vim templates/project_structure/config.yaml
 ### How to Contribute
 1. **Fork the Repository**
    ```bash
-   # Clone your fork
+   ## Clone your fork
    git clone https://github.com/ArmandoSaboia/mlops-projects.git
    cd mlops-projects
 
@@ -481,13 +515,17 @@ vim templates/project_structure/config.yaml
 
 3. **Make Your Changes**
 # Make changes
+```bash
 git add .
 git commit -m "Add amazing feature"
+```
 
 4. **Push to Branch**
+```bash
 git push origin feature/amazing-feature
+```
 
-5. **Open a Pull Request**
+6. **Open a Pull Request**
 #### Steps:
 • [Visit Pull Requests](https://github.com/ArmandoSaboia/mlops-projects/pulls)
 • Click "New Pull Request" 
