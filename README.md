@@ -554,21 +554,21 @@ git push origin feature/amazing-feature
 [Full License Text](./LICENSE) - `v1.0.0`
 
 ### Terms of Use
-• ✅ Commercial use permitted
-• ✅ Modification allowed
-• ✅ Distribution permitted
-• ❗ Liability limited
-• ❗ No warranty provided
-• ℹ️ License and copyright notice required
+- ** ✅ Commercial use permitted**
+- **✅ Modification allowed**
+- **✅ Distribution permitted**
+- **❗ Liability limited**
+- **❗ No warranty provided**
+- **ℹ️ License and copyright notice required**
 
 ## 📧 Contact
 
 ### Project Maintainer
-• **Name**: Armando Saboia
-• **Role**: MLOps Engineer Enthusiast
-• **Location**: Brazil 🇧🇷
-• **Email**: [4rm4nd1nh0_br@protonmail.com](mailto:4rm4nd1nh0_br@protonmail.com)
-• **LinkedIn**: [Armando Saboia](https://www.linkedin.com/in/armandosaboia)
+- **Name: Armando Saboia**
+- **Role: MLOps Engineer Enthusiast**
+- **Location: Brazil 🇧🇷**
+- **Email**: [4rm4nd1nh0_br@protonmail.com](mailto:4rm4nd1nh0_br@protonmail.com)**
+- **LinkedIn**: [Armando Saboia](https://www.linkedin.com/in/armandosaboia)**
 
 #### Experience
 `2+ years experience` | `MLOps enthusiast` | `Open source contributor`
@@ -576,14 +576,14 @@ git push origin feature/amazing-feature
 ### Support Channels
 
 #### [GitHub Issues](https://github.com/ArmandoSaboia/mlops-projects/issues)
-  • Bug reports
-  • Feature requests
-  • Security concerns
+  - **Bug reports**
+  - **Feature requests**
+  - **Security concerns**
 
 #### [GitHub Discussions](https://github.com/ArmandoSaboia/mlops-projects/discussions)
-  • Q&A
-  • Ideas
-  • Community chat
+  - **Q&A**
+  - **Ideas**
+  - **Community chat**
 
 ## ⭐ Support the Project
 #### If you find this repository useful, please consider:
