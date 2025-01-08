@@ -589,6 +589,6 @@ git push origin feature/amazing-feature
 
 If you find this repository useful, please consider:
 
-  • Giving it a star ⭐
-  • Sharing with colleagues 🔄
-  • Contributing to its development 🛠️
+  • **Giving it a star** ⭐
+  • **Sharing with colleagues** 🔄
+  • **Contributing to its development** 🛠️
