@@ -323,7 +323,7 @@ project_name/
 
 2.1. **Documentation Files**
    - [`README.md`](./templates/project_structure/README.md): Project overview template
-     ```markdown
+     ```
      #### Project Name
 
      #### Overview
@@ -338,7 +338,7 @@ project_name/
      ```
 
    - [`CONTRIBUTING.md`](./docs/contributing.md): Contribution guidelines
-     ```markdown
+     ```
      #### Contributing Guidelines
 
      ## How to Contribute
@@ -354,7 +354,7 @@ project_name/
      ```
 
    - [`CHANGELOG.md`](./docs/changelog.md): Version history
-     ```markdown
+     ```
      # Changelog
 
      ## [1.0.0] - 2025-01-07
@@ -371,7 +371,7 @@ project_name/
 
 2.2. **Configuration Templates**
    - [`config.yaml`](./templates/project_structure/config.yaml): Project configuration
-     ```yaml
+     ```
      project:
        name: "project_name"
        version: "1.0.0"
@@ -388,7 +388,7 @@ project_name/
      ```
 
    - [`params.yaml`](./templates/project_structure/params.yaml): Model parameters
-     ```yaml
+     ```
      model:
        name: "model_name"
        type: "classifier"
@@ -404,7 +404,7 @@ project_name/
      ```
 
    - [`metrics.yaml`](./templates/project_structure/metrics.yaml): Evaluation metrics
-     ```yaml
+     ```
      metrics:
        training:
          - accuracy
