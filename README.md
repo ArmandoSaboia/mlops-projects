@@ -323,7 +323,7 @@ project_name/
 
 2.1. **Documentation Files**
    - [`README.md`](./templates/project_structure/README.md): Project overview template
-     
+
      #### Project Name
 
      #### Overview
@@ -338,36 +338,36 @@ project_name/
      
 
    - [`CONTRIBUTING.md`](./docs/contributing.md): Contribution guidelines
-     ```
+    
      #### Contributing Guidelines
 
      ## How to Contribute
-     1. Fork the repository
-     2. Create your feature branch
-     3. Make your changes
-     4. Submit a pull request
+     1. **Fork the repository**
+     2. **Create your feature branch**
+     3. **Make your changes**
+     4. **Submit a pull request**
 
      ## Code Standards
-     - Follow PEP 8
-     - Write tests
+     - **Follow PEP 8**
+     - **Write tests**
      - Update documentation
-     ```
+      
 
    - [`CHANGELOG.md`](./docs/changelog.md): Version history
-     ```
+     
      # Changelog
 
      ## [1.0.0] - 2025-01-07
      ### Added
-     - Initial release
-     - Feature A
-     - Feature B
+     - **Initial release**
+     - **Feature A**
+     - **Feature B**
 
      ## [0.1.0] - 2024-12-25
      ### Added
-     - Project setup
-     - Basic functionality
-     ```
+     - **Project setup**
+     - **Basic functionality**
+    
 
 2.2. **Configuration Templates**
    - [`config.yaml`](./templates/project_structure/config.yaml): Project configuration
@@ -419,11 +419,12 @@ project_name/
      ```
 
 3. **Access Templates**
+#### Copy project template
 ```bash
-# Copy project template
 cp -r templates/project_structure/* new_project/
-
-# View template contents
+```
+#### View template contents
+```bash
 cat templates/project_structure/README.md
 cat templates/project_structure/config.yaml
 ```
