@@ -1,9 +1,9 @@
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https:)
 ![MIT LICENSE](https://badgen.net//badge/license/MIT/green) 
 ![MAINTAINED BADGE](https://img.shields.io/badge/Maintained%3F-yes-green.svg) 
-![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/ArmandoSaboia/mlops-projects/projects/agriculture/)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/mlops-projects/projects/agriculture/)
-![GitHub contributors](https://img.shields.io/github/contributors/ArmandoSaboia/mlops-projects/projects/agriculture/)
+![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/ArmandoSaboia/projects/agriculture)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/projects/agriculture)
+![GitHub contributors](https://img.shields.io/github/contributors/ArmandoSaboia/projects/agriculture)
 
 # Agriculture Project
 
