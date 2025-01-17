@@ -5,106 +5,106 @@ A comprehensive collection of Machine Learning Operations (MLOps) projects imple
 ## 🎯 Projects Overview
 
 ### 📊 Customer & Marketing Analytics
-1. **[Customer Insights and Personalization](./mlops-projects/customer_insights/)**
+1. **[Customer Insights and Personalization](./projects/customer_insights/README.md)**
    - Customer segmentation
    - Personalized recommendations
    - Customer lifetime value prediction
 
-2. **[Sales and Marketing Optimization](./mlops-projects/sales_marketing/)**
+2. **[Sales and Marketing Optimization](./projects/sales_marketing/README.md)**
    - Sales forecasting
    - Campaign optimization
    - Lead scoring
 
 ### 💼 Business Operations
-3. **[Operational Efficiency](./mlops-projects/operational_efficiency/)**
+3. **[Operational Efficiency](./projects/operational_efficiency/README.md)**
    - Process optimization
    - Resource allocation
    - Predictive maintenance
 
-4. **[Product Development](./mlops-projects/product_development/)**
+4. **[Product Development](./projects/product_development/README.md)**
    - Feature prioritization
    - A/B testing
    - User behavior analysis
 
 ### 🏦 Finance & Risk
-5. **[Fraud Detection](./mlops-projects/fraud_detection/)**
+5. **[Fraud Detection](./projects/fraud_detection/README.md)**
    - Transaction fraud detection
    - Identity theft prevention
    - Anomaly detection
 
-6. **[Financial Forecasting](./mlops-projects/financial_forecasting/)**
+6. **[Financial Forecasting](./projects/financial_forecasting/README.md)**
    - Revenue prediction
    - Risk assessment
    - Market analysis
 
 ### 👥 Human Resources
-7. **[HR and Talent Management](./mlops-projects/hr_talent_management/)**
+7. **[HR and Talent Management](./projects/hr_talent_management/README.md)**
    - Talent acquisition
    - Employee retention
    - Performance prediction
 
 ### 🏥 Healthcare
-8. **[Healthcare and Life Sciences](./mlops-projects/healthcare_life_sciences/)**
+8. **[Healthcare and Life Sciences](./projects/healthcare_life_sciences/README.md)**
    - Patient outcome prediction
    - Disease diagnosis
    - Treatment optimization
 
 ### 🛍️ Retail
-9. **[Retail and E-commerce](./mlops-projects/retail_ecommerce/)**
+9. **[Retail and E-commerce](./projects/retail_ecommerce/README.md)**
    - Inventory optimization
    - Price optimization
    - Demand forecasting
 
 ### 🔒 Security
-10. **[Cybersecurity](./mlops-projects/cybersecurity/)**
+10. **[Cybersecurity](./projects/cybersecurity/README.md)**
     - Threat detection
     - Network security
     - Risk assessment
 
 ### 🌱 Sustainability
-11. **[Energy and Sustainability](./mlops-projects/energy_sustainability/)**
+11. **[Energy and Sustainability](./projects/energy_sustainability/README.md)**
     - Energy consumption prediction
     - Carbon footprint analysis
     - Resource optimization
 
 ### 🏘️ Real Estate
-12. **[Real Estate](./mlops-projects/real_estate/)**
+12. **[Real Estate](./projects/real_estate/README.md)**
     - Price prediction
     - Market analysis
     - Investment optimization
 
 ### 🚛 Logistics
-13. **[Transportation and Logistics](./mlops-projects/transportation_logistics/)**
+13. **[Transportation and Logistics](./projects/transportation_logistics/README.md)**
     - Route optimization
     - Fleet management
     - Delivery time prediction
 
 ### 🎬 Media
-14. **[Media and Entertainment](./mlops-projects/media_entertainment/)**
+14. **[Media and Entertainment](./projects/media_entertainment/README.md)**
     - Content recommendation
     - User engagement
     - Trend analysis
 
 ### 🌾 Agriculture
-15. **[Agriculture](./mlops-projects/agriculture/)**
+15. **[Agriculture](./projects/agriculture/README.md)**
     - Crop yield prediction
     - Disease detection
     - Resource optimization
 
 ### ⚖️ Legal
-16. **[Legal and Compliance](./mlops-projects/legal_compliance/)**
+16. **[Legal and Compliance](./projects/legal_compliance/README.md)**
     - Risk assessment
     - Document analysis
     - Compliance monitoring
 
 ### 📚 Education
-17. **[Education](./mlops-projects/education/)**
+17. **[Education](./projects/education/README.md)**
     - Student performance prediction
     - Content recommendation
     - Learning path optimization
 
 ### 📡 Telecommunications
-18. **[Telecommunications](./mlops-projects/telecommunications/)**
+18. **[Telecommunications](./projects/telecommunications/README.md)**
     - Network optimization
     - Customer churn prediction
     - Service quality analysis
@@ -137,34 +137,48 @@ A comprehensive collection of Machine Learning Operations (MLOps) projects imple
 
 ## 📂 Repository Structure
 ```bash
-mlops-projects/ 
-├── projects/  
-│ ├── customer_insights/ 
-│ ├── sales_marketing/ 
-│ ├── operational_efficiency/ 
-│ ├── product_development/  
-│ ├── fraud_detection/ 
-│ ├── financial_forecasting/ 
-│ ├── hr_talent_management/  
-│ ├── healthcare_life_sciences/ 
-│ ├── retail_ecommerce/  
-│ ├── cybersecurity/ 
-│ ├── energy_sustainability/ 
-│ ├── real_estate/
-│ ├── transportation_logistics/
-│ ├── media_entertainment/ 
-│ ├── agriculture/ 
-│ ├── legal_compliance/ 
-│ ├── education/ 
-│ └── telecommunications/
-├── templates/ 
-│ ├── project_structure/ 
-│ │   └── README.md
-│ ├── report_template/ 
-│ │   └── template.md
-│ └── presentation_template/ 
-├── docs/ # Documentation 
-└── utils/ # Shared utilities
+mlops-projects/
+├── projects/
+│   ├── customer_insights/
+│   │   ├── data/                     
+│   │   │   ├── raw/                
+│   │   │   └── processed/           
+│   │   ├── data_ingestion/           
+│   │   │   ├── api_client.py        
+│   │   │   └── db_client.py         
+│   │   ├── features/                 
+│   │   │   ├── build_features.py    
+│   │   │   └── feature_utils.py     
+│   │   ├── models/                   
+│   │   │   ├── churn_model.pkl     
+│   │   │   └── recommendation_model.pkl 
+│   │   ├── training/             
+│   │   │   ├── train_churn.py      
+│   │   │   └── train_recommendation.py 
+│   │   ├── inference/                
+│   │   │   ├── main.py              
+│   │   │   └── model_loader.py      
+│   │   ├── streamlit_app/          
+│   │   │   ├── app.py               
+│   │   │   └── utils.py             
+│   │   ├── tests/                  
+│   │   │   ├── test_api.py          
+│   │   │   └── test_features.py     
+│   │   ├── docker-compose.yml        
+│   │   ├── Dockerfile                  
+│   │   ├── requirements.txt            
+│   │   ├── pyproject.toml           
+│   │   ├── README.md               
+│   │   ├── .gitignore                
+│   │   └── dags/                  
+│   │   │   └── data_pipeline.py     
+│   ├── (other projects - same structure as customer_insights)
+├── templates/
+├── docs/
+├── utils/ 
+├── pyproject.toml 
+├── .gitignore
+└── scripts/ 
 ```
 
 ## 🚀 Getting Started
