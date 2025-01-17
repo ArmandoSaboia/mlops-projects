@@ -1,4 +1,4 @@
-# Fraud Detection Project
+# fraud detection
 
 ## Overview
 A brief description of the project and its purpose.
@@ -38,7 +38,8 @@ fraud_detection/
 ├── .gitignore                
 └── dags/                  
     └── data_pipeline.py     
-    
+``` 
+
 ### Usage
 Data Ingestion
 Use api_client.py to fetch data from APIs. Use db_client.py to interact with databases.
@@ -56,25 +57,29 @@ Start the FastAPI app using main.py. Use model_loader.py to load models for infe
 Run the Streamlit app using:
 ```bash  
 streamlit run streamlit_app/app.py
+```
 
 ### Testing
 Run unit tests using:
 ```bash
 pytest tests/
+```
 
 ### Docker
 - **Build the Docker image:**
 ```bash
 docker build -t fraud_detection .
-
+```
 - **Run the container:**
 ```bash
 docker-compose up
+```
 
 ## Dependencies
 Install the required dependencies using:
 ```bash
 pip install -r requirements.txt
+```
 
 ## Contributing
 - **Fork the repository.** 
@@ -82,4 +87,4 @@ pip install -r requirements.txt
 - **Submit a pull request.**
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](path/to/file) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
