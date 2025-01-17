@@ -40,18 +40,22 @@ project_name/
     └── data_pipeline.py     
 ``` 
 
-### Usage
-Data Ingestion
-Use api_client.py to fetch data from APIs. Use db_client.py to interact with databases.
+## Usage
+### Data Ingestion
+- **Use api_client.py to fetch data from APIs.** 
+- **Use db_client.py to interact with databases.**
 
-### Feature Engineering
-Run build_features.py to generate features. Use feature_utils.py for helper functions.
+## Feature Engineering
+- **Run build_features.py to generate features.**
+- **Use feature_utils.py for helper functions.**
 
-### Model Training
-Train the churn model using train_churn.py. Train the recommendation model using train_recommendation.py.
+## Model Training
+- **Train the churn model using train_churn.py.** 
+- **Train the recommendation model using train_recommendation.py.**
 
-### Inference
-Start the FastAPI app using main.py. Use model_loader.py to load models for inference.
+## Inference
+- **Start the FastAPI app using main.py.**
+- **Use model_loader.py to load models for inference.**
 
 ### Streamlit App
 Run the Streamlit app using:
