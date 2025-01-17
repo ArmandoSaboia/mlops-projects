@@ -2,9 +2,9 @@
 
 ## Overview
 This project focuses on analyzing customer data to derive actionable insights.
-1.Customer segmentation
-2.Personalized recommendations
-3.Customer lifetime value prediction
+1. **Customer segmentation**
+2. **Personalized recommendations**
+3. **Customer lifetime value prediction**
 
 ## Structure
 - `data/`: Contains raw and processed data.
