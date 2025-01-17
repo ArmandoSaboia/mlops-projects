@@ -5,7 +5,7 @@ A comprehensive collection of Machine Learning Operations (MLOps) projects imple
 ## 🎯 Projects Overview
 
 ### 📊 Customer & Marketing Analytics
-1. **[Customer Insights and Personalization](./mlops-projects/customer_insights/)**
+- [1. Customer Insights](#1-customer-insights)
    - Customer segmentation
    - Personalized recommendations
    - Customer lifetime value prediction
