@@ -1,11 +1,11 @@
-# product development
+# Project Name
 
 ## Overview
 A brief description of the project and its purpose.
 
 ## Repository Structure
 ```bash
-product_development/
+project_name/
 ├── data/                     
 │   ├── raw/                
 │   └── processed/           
@@ -75,7 +75,7 @@ Docker
 Build the Docker image:
 
 ```
-docker build -t product_development .
+docker build -t project_name .
 
 Run the container:
 ```
