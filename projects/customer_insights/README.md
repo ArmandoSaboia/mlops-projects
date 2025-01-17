@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # customer insights
 
 ## Overview
@@ -40,82 +39,47 @@ customer_insights/
 └── dags/                  
     └── data_pipeline.py     
     
-Usage
-
+### Usage
 Data Ingestion
-
 Use api_client.py to fetch data from APIs. Use db_client.py to interact with databases.
 
-Feature Engineering
-
+### Feature Engineering
 Run build_features.py to generate features. Use feature_utils.py for helper functions.
 
-Model Training
-
+### Model Training
 Train the churn model using train_churn.py. Train the recommendation model using train_recommendation.py.
 
-Inference
-
+### Inference
 Start the FastAPI app using main.py. Use model_loader.py to load models for inference.
 
-Streamlit App
-
+### Streamlit App
 Run the Streamlit app using:
-```  
+```bash  
 streamlit run streamlit_app/app.py
 
-Testing
-
+### Testing
 Run unit tests using:
-
-```
+```bash
 pytest tests/
 
-Docker
-
-Build the Docker image:
-
-```
+### Docker
+- **Build the Docker image:**
+```bash
 docker build -t customer_insights .
 
-Run the container:
-```
+- **Run the container:**
+```bash
 docker-compose up
 
-Dependencies
-
+## Dependencies
 Install the required dependencies using:
-```
+```bash
 pip install -r requirements.txt
 
-Contributing
+## Contributing
+- **Fork the repository.** 
+- **Create a new branch for your feature or bugfix.** 
+- **Submit a pull request.**
 
-Fork the repository. Create a new branch for your feature or bugfix. Submit a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-=======
-# Customer Insights
-
-## Overview
-This project focuses on analyzing customer data to derive actionable insights.
-1. **Customer segmentation**
-2. **Personalized recommendations**
-3. **Customer lifetime value prediction**
-
-## Structure
-- `data/`: Contains raw and processed data.
-- `data_ingestion/`: Scripts for fetching data from APIs or databases.
-- `features/`: Feature engineering scripts.
-- `models/`: Trained models.
-- `training/`: Model training scripts.
-- `inference/`: API for model inference.
-- `streamlit_app/`: Streamlit application for visualization.
-- `tests/`: Unit and integration tests.
-- `dags/`: Airflow DAGs for pipeline orchestration.
-
-## Usage
-Run the following command to start the Streamlit app:
-```bash
-streamlit run streamlit_app/app.py
->>>>>>> c1acb5bc2af1113e378cc7d34faa9bc9afb008ae
+## License
+This project is licensed under the MIT License. See the [LICENSE](path/to/file) file for details.
