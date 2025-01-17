@@ -120,15 +120,20 @@ A comprehensive collection of Machine Learning Operations (MLOps) projects imple
 ### MLOps Tools
 - **Experiment Tracking**: MLflow
 - **Data Version Control**: DVC
-- **Model Serving**: BentoML, TensorFlow Serving
+- **Model Serving**: BentoML, TensorFlow Serving, FastAPI (for serving models as APIs)
 - **Feature Store**: Feast
 - **Pipeline Orchestration**: Airflow, Kubeflow
+- **Data Transformation**: dbt (for transforming and modeling data)
+- **Data Generation**: Faker (for generating synthetic data)
 
 ### Infrastructure
-- **Containerization**: Docker
+- **Containerization**: Docker, Streamlit (for building interactive web applications)
 - **Orchestration**: Kubernetes
 - **CI/CD**: GitHub Actions
 - **Monitoring**: Prometheus, Grafana
+
+### API Development
+- **Validation**: Pydantic (for data validation with FastAPI)
 
 ## 📂 Repository Structure
 ```bash
