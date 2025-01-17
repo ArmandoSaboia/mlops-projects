@@ -82,5 +82,5 @@ pip install -r requirements.txt
 - **Submit a pull request.**
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](path/to/file) file for details.
+This project is licensed under the MIT License. See the [LICENSE]("https://github.com/ArmandoSaboia/mlops-projects/blob/main/LICENSE") file for details.
 
