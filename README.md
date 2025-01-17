@@ -137,34 +137,48 @@ A comprehensive collection of Machine Learning Operations (MLOps) projects imple
 
 ## 📂 Repository Structure
 ```bash
-mlops-projects/ 
-├── projects/  
-│ ├── customer_insights/ 
-│ ├── sales_marketing/ 
-│ ├── operational_efficiency/ 
-│ ├── product_development/  
-│ ├── fraud_detection/ 
-│ ├── financial_forecasting/ 
-│ ├── hr_talent_management/  
-│ ├── healthcare_life_sciences/ 
-│ ├── retail_ecommerce/  
-│ ├── cybersecurity/ 
-│ ├── energy_sustainability/ 
-│ ├── real_estate/
-│ ├── transportation_logistics/
-│ ├── media_entertainment/ 
-│ ├── agriculture/ 
-│ ├── legal_compliance/ 
-│ ├── education/ 
-│ └── telecommunications/
-├── templates/ 
-│ ├── project_structure/ 
-│ │   └── README.md
-│ ├── report_template/ 
-│ │   └── template.md
-│ └── presentation_template/ 
-├── docs/ # Documentation 
-└── utils/ # Shared utilities
+mlops-projects/
+├── projects/
+│   ├── customer_insights/
+│   │   ├── data/                     
+│   │   │   ├── raw/                
+│   │   │   └── processed/           
+│   │   ├── data_ingestion/           
+│   │   │   ├── api_client.py        
+│   │   │   └── db_client.py         
+│   │   ├── features/                 
+│   │   │   ├── build_features.py    
+│   │   │   └── feature_utils.py     
+│   │   ├── models/                   
+│   │   │   ├── churn_model.pkl     
+│   │   │   └── recommendation_model.pkl 
+│   │   ├── training/             
+│   │   │   ├── train_churn.py      
+│   │   │   └── train_recommendation.py 
+│   │   ├── inference/                
+│   │   │   ├── main.py              
+│   │   │   └── model_loader.py      
+│   │   ├── streamlit_app/          
+│   │   │   ├── app.py               
+│   │   │   └── utils.py             
+│   │   ├── tests/                  
+│   │   │   ├── test_api.py          
+│   │   │   └── test_features.py     
+│   │   ├── docker-compose.yml        
+│   │   ├── Dockerfile                  
+│   │   ├── requirements.txt            
+│   │   ├── pyproject.toml           
+│   │   ├── README.md               
+│   │   ├── .gitignore                
+│   │   └── dags/                  
+│   │   │   └── data_pipeline.py     
+│   ├── (other projects - same structure as customer_insights)
+├── templates/
+├── docs/
+├── utils/ 
+├── pyproject.toml 
+├── .gitignore
+└── scripts/ 
 ```
 
 ## 🚀 Getting Started
