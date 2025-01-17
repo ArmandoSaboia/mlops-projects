@@ -323,8 +323,8 @@ project_name/
 
 2.1. **Documentation Files**
    - [`README.md`](./templates/project_structure/README.md): Project overview template
-     ```
-     Project Name
+     
+     #### Project Name
 
      #### Overview
      Brief description of the project and its goals.
@@ -335,7 +335,7 @@ project_name/
 
      #### Installation
      Installation instructions...
-     ```
+     
 
    - [`CONTRIBUTING.md`](./docs/contributing.md): Contribution guidelines
      ```
