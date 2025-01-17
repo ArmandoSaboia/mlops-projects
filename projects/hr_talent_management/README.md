@@ -1,4 +1,4 @@
-# hr talent management
+# HR Talent Management Project
 
 ## Overview
 A brief description of the project and its purpose.

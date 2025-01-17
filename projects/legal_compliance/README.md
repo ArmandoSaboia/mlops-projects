@@ -1,4 +1,4 @@
-# legal compliance
+# Legal Compliance
 
 ## Overview
 A brief description of the project and its purpose.

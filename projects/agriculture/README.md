@@ -1,4 +1,4 @@
-# agriculture
+# Agriculture Project
 
 ## Overview
 A brief description of the project and its purpose.
@@ -83,3 +83,4 @@ pip install -r requirements.txt
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](path/to/file) file for details.
+

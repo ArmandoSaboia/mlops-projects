@@ -1,4 +1,4 @@
-# education
+# Education Project
 
 ## Overview
 A brief description of the project and its purpose.

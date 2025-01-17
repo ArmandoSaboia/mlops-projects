@@ -1,4 +1,4 @@
-# sales marketing
+# Sales Marketing Project
 
 ## Overview
 A brief description of the project and its purpose.

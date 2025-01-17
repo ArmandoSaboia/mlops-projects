@@ -1,4 +1,4 @@
-# financial forecasting
+# Financial Forecasting
 
 ## Overview
 A brief description of the project and its purpose.
