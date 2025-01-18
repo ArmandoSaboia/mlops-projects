@@ -2,7 +2,7 @@
 
 A comprehensive collection of 18 production-ready MLOps projects implementing end-to-end machine learning solutions across various domains.
 
-![Build Status](https://github.com/ArmandoSaboia/mlops-projects/workflows/CI/badge.svg)
+![Build Status](https://github.com/ArmandoSaboia/mlops-projects/actions/workflows/ci.yml/badge.svg)
 ![Python Versions](https://img.shields.io/pypi/pyversions/mlops-projects)
 ![License](https://img.shields.io/github/license/ArmandoSaboia/mlops-projects)
 ![Last Commit](https://img.shields.io/github/last-commit/ArmandoSaboia/mlops-projects)
@@ -164,13 +164,13 @@ mlops-projects/
 
 ## 🧪 Quality Assurance
 ```bash
-#### Run tests
+Run tests
 make test
 
-#### Run linting
+Run linting
 make lint
 
-#### Run all checks
+Run all checks
 make check-all 
 ```
 
