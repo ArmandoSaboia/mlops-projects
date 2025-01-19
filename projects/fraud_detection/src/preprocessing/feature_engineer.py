@@ -31,6 +31,7 @@ class FeatureEngineer:
     
     def _create_time_features(self, df: pd.DataFrame) -> pd.DataFrame:
         """Create time-based features."""
+        df = df.copy()
         df['hour'] = pd.to_datetime(df['timestamp']).dt.hour
         df['day_of_week'] = pd.to_datetime(df['timestamp']).dt.dayofweek
         df['is_weekend'] = df['day_of_week'].isin([5, 6]).astype(int)

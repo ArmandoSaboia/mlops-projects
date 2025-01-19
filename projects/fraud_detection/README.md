@@ -1,73 +1,46 @@
-# Fraud Detection System
+# Fraud Detection API
 
-A machine learning-based fraud detection system that uses real-time transaction monitoring and adaptive learning to identify potentially fraudulent activities.
+A machine learning-powered API for detecting fraudulent transactions.
 
-## Features
-
-- Real-time transaction scoring
-- Adaptive model retraining
-- Anomaly detection
-- Feature engineering pipeline
-- Model monitoring and drift detection
-- RESTful API endpoints
-- Comprehensive logging and alerting
-
-## Project Structure
-
-```
-fraud_detection/
-├── src/
-│   ├── api/                # FastAPI endpoints
-│   ├── preprocessing/      # Data processing and feature engineering
-│   ├── training/          # Model training and evaluation
-│   ├── monitoring/        # Model monitoring and metrics
-│   └── utils/            # Helper functions
-├── tests/                # Test suites
-├── config/              # Configuration files
-└── models/             # Trained model artifacts
-```
-
-## Getting Started
+## Setup
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/ArmandoSaboia/fraud-detection.git
-cd fraud-detection
+git clone https://github.com/ArmandoSaboia/mlops-projects.git
+cd projects/fraud_detection
 ```
 
-2. Install dependencies:
+2. Create and activate a virtual environment:
 ```bash
-pip install -r requirements.txt
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Configure the environment:
+3. Install dependencies:
 ```bash
-cp .env.example .env
-# Edit .env with your settings
+pip install -e .
 ```
 
-4. Run the service:
+4. Set up environment variables:
+Create a `.env` file in the project root with:
+```
+IPSTACK_API_KEY=your_ipstack_key
+CLEARBIT_API_KEY=your_clearbit_key
+ORB_INTELLIGENCE_API_KEY=your_orb_key
+```
+
+5. Run the API:
 ```bash
-uvicorn src.api.endpoints:app --reload
+python run.py
 ```
 
-## API Documentation
+## API Endpoints
 
-Visit `http://localhost:8000/docs` for the interactive API documentation.
+- `GET /`: Root endpoint
+- `GET /health`: Health check endpoint
+- `POST /predict`: Fraud prediction endpoint
 
-Key endpoints:
-- `POST /predict` - Score a transaction
-- `POST /feedback` - Submit feedback for model updating
-- `GET /metrics` - Get model performance metrics
-
-## Model Training
-
-To train a new model:
-```bash
-python -m src.training.model_trainer
-```
-
-## Testing
+## Development
 
 Run tests:
 ```bash
@@ -76,4 +49,4 @@ pytest tests/
 
 ## License
 
-MIT License
+MIT

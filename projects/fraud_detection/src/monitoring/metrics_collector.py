@@ -7,14 +7,13 @@ class MetricsCollector:
         # Prediction metrics
         self.prediction_counter = Counter(
             'fraud_predictions_total',
-            'Total number of fraud predictions made',
-            ['prediction']
+            'Total number of predictions'
         )
         
         # Latency metrics
         self.prediction_latency = Histogram(
             'prediction_latency_seconds',
-            'Time taken for fraud prediction'
+            'Time taken for prediction'
         )
         
         # Model performance metrics
