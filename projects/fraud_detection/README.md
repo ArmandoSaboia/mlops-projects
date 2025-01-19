@@ -1,90 +1,79 @@
-# fraud detection
+# Fraud Detection System
 
-## Overview
-A brief description of the project and its purpose.
+A machine learning-based fraud detection system that uses real-time transaction monitoring and adaptive learning to identify potentially fraudulent activities.
 
-## Repository Structure
-```bash
+## Features
+
+- Real-time transaction scoring
+- Adaptive model retraining
+- Anomaly detection
+- Feature engineering pipeline
+- Model monitoring and drift detection
+- RESTful API endpoints
+- Comprehensive logging and alerting
+
+## Project Structure
+
+```
 fraud_detection/
-├── data/                     
-│   ├── raw/                
-│   └── processed/           
-├── data_ingestion/           
-│   ├── api_client.py        
-│   └── db_client.py         
-├── features/                 
-│   ├── build_features.py    
-│   └── feature_utils.py     
-├── models/                   
-│   ├── churn_model.pkl     
-│   └── recommendation_model.pkl 
-├── training/             
-│   ├── train_churn.py      
-│   └── train_recommendation.py 
-├── inference/                
-│   ├── main.py              
-│   └── model_loader.py      
-├── streamlit_app/          
-│   ├── app.py               
-│   └── utils.py             
-├── tests/                  
-│   ├── test_api.py          
-│   └── test_features.py     
-├── docker-compose.yml        
-├── Dockerfile                  
-├── requirements.txt            
-├── pyproject.toml           
-├── README.md               
-├── .gitignore                
-└── dags/                  
-    └── data_pipeline.py     
-``` 
-
-### Usage
-Data Ingestion
-Use api_client.py to fetch data from APIs. Use db_client.py to interact with databases.
-
-### Feature Engineering
-Run build_features.py to generate features. Use feature_utils.py for helper functions.
-
-### Model Training
-Train the churn model using train_churn.py. Train the recommendation model using train_recommendation.py.
-
-### Inference
-Start the FastAPI app using main.py. Use model_loader.py to load models for inference.
-
-### Streamlit App
-Run the Streamlit app using:
-```bash  
-streamlit run streamlit_app/app.py
+├── src/
+│   ├── api/                # FastAPI endpoints
+│   ├── preprocessing/      # Data processing and feature engineering
+│   ├── training/          # Model training and evaluation
+│   ├── monitoring/        # Model monitoring and metrics
+│   └── utils/            # Helper functions
+├── tests/                # Test suites
+├── config/              # Configuration files
+└── models/             # Trained model artifacts
 ```
 
-### Testing
-Run unit tests using:
+## Getting Started
+
+1. Clone the repository:
 ```bash
-pytest tests/
+git clone https://github.com/ArmandoSaboia/fraud-detection.git
+cd fraud-detection
 ```
 
-### Docker
-- **Build the Docker image:**
-```bash
-docker build -t fraud_detection .
-```
-- **Run the container:**
-```bash
-docker-compose up
-```
-
-## Dependencies
-Install the required dependencies using:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Contributing
-- **Fork the repository.** 
-- **Create a new branch for your feature or bugfix.** 
-- **Submit a pull request.**
+3. Configure the environment:
+```bash
+cp .env.example .env
+# Edit .env with your settings
+```
+
+4. Run the service:
+```bash
+uvicorn src.api.endpoints:app --reload
+```
+
+## API Documentation
+
+Visit `http://localhost:8000/docs` for the interactive API documentation.
+
+Key endpoints:
+- `POST /predict` - Score a transaction
+- `POST /feedback` - Submit feedback for model updating
+- `GET /metrics` - Get model performance metrics
+
+## Model Training
+
+To train a new model:
+```bash
+python -m src.training.model_trainer
+```
+
+## Testing
+
+Run tests:
+```bash
+pytest tests/
+```
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+MIT License

@@ -1,0 +1,39 @@
+# Model Configuration
+model:
+  name: credit_risk_classifier
+  type: gradient_boosting
+  params:
+    n_estimators: 100
+    max_depth: 5
+    learning_rate: 0.1
+
+# Data Configuration
+data:
+  train_path: data/train/
+  test_path: data/test/
+  features:
+    - credit_score
+    - income
+    - debt_ratio
+    - payment_history
+    - employment_length
+
+# Training Configuration
+training:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+
+# MLflow Configuration
+mlflow:
+  tracking_uri: http://localhost:5000
+  experiment_name: credit_risk_model
+
+# Monitoring Configuration
+monitoring:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+  prometheus_port: 8000 

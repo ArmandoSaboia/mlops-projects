@@ -1,0 +1,36 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: fraud-detection-cluster
+  region: us-east-1
+
+nodeGroups:
+  - name: ng-1
+    instanceType: t3.large
+    desiredCapacity: 3
+    minSize: 2
+    maxSize: 4
+    volumeSize: 80
+    labels:
+      role: worker
+    tags:
+      k8s.io/cluster-autoscaler/enabled: "true"
+      k8s.io/cluster-autoscaler/fraud-detection-cluster: "owned"
+
+  - name: ng-2
+    instanceType: t3.xlarge
+    desiredCapacity: 2
+    minSize: 1
+    maxSize: 3
+    volumeSize: 100
+    labels:
+      role: ml-worker
+    taints:
+      dedicated: ml:NoSchedule
+
+addons:
+  - name: vpc-cni
+  - name: coredns
+  - name: kube-proxy
+  - name: aws-ebs-csi-driver 
