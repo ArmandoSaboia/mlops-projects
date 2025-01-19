@@ -1,33 +1,27 @@
-name: CI
+name: CI Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, mlops-repo ]
   pull_request:
     branches: [ main ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    
+    - uses: actions/checkout@v2
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
-        python-version: '3.8'
-    
-    - name: Basic repository check
+        python-version: '3.9'
+    - name: Run tests
       run: |
-        # Check if critical files exist
-        test -f README.md
-        test -f LICENSE
-    
-    - name: Repository structure check
-      run: |
-        # Create basic directory structure if not exists
-        mkdir -p projects
-        mkdir -p common/{monitoring,deployment,testing}
-        mkdir -p docs
-        mkdir -p scripts
-        mkdir -p templates 
+        for d in projects/*/; do
+          cd $d
+          if [ -f "setup.py" ]; then
+            pip install -e .
+            pytest tests/
+          fi
+          cd ../../
+        done
