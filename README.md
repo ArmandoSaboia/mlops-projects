@@ -10,34 +10,34 @@ A comprehensive collection of 18 production-ready MLOps projects implementing en
 ## 🎯 Projects Overview
 
 ### Financial Services
-1. [Fraud Detection](./projects/fraud_detection/) - Real-time transaction fraud detection
-2. [Credit Risk](./projects/credit_risk/) - Credit risk assessment and scoring
-3. [Market Analysis](./projects/market_analysis/) - Market trend prediction and analysis
+1. [Fraud Detection](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/fraud_detection/) - Real-time transaction fraud detection
+2. [Credit Risk](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/credit_risk/) - Credit risk assessment and scoring
+3. [Market Analysis](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/market_analysis/) - Market trend prediction and analysis
 
 ### Healthcare
-4. [Patient Outcomes](./projects/patient_outcomes/) - Patient outcome prediction
-5. [Medical Imaging](./projects/medical_imaging/) - Disease detection from medical images
-6. [Clinical Trials](./projects/clinical_trials/) - Clinical trial analysis and prediction
+4. [Patient Outcomes](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/patient_outcomes/) - Patient outcome prediction
+5. [Medical Imaging](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/medical_imaging/) - Disease detection from medical images
+6. [Clinical Trials](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/clinical_trials/) - Clinical trial analysis and prediction
 
 ### Retail & E-commerce 
-7. [Customer Segmentation](./projects/customer_segmentation/) - Customer behavior analysis
-8. [Recommendation Engine](./projects/recommendation/) - Product recommendation system
-9. [Inventory Management](./projects/inventory/) - Inventory optimization and forecasting
+7. [Customer Segmentation](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/customer_segmentation/) - Customer behavior analysis
+8. [Recommendation Engine](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/recommendation/) - Product recommendation system
+9. [Inventory Management](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/inventory/) - Inventory optimization and forecasting
 
 ### Manufacturing
-10. [Predictive Maintenance](./projects/predictive_maintenance/) - Equipment failure prediction
-11. [Quality Control](./projects/quality_control/) - Manufacturing quality assurance
-12. [Supply Chain](./projects/supply_chain/) - Supply chain optimization
+10. [Predictive Maintenance](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/predictive_maintenance/) - Equipment failure prediction
+11. [Quality Control](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/quality_control/) - Manufacturing quality assurance
+12. [Supply Chain](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/supply_chain/) - Supply chain optimization
 
 ### Marketing & Sales
-13. [Lead Scoring](./projects/lead_scoring/) - Sales lead qualification
-14. [Campaign Optimization](./projects/campaign_opt/) - Marketing campaign optimization
-15. [Churn Prediction](./projects/churn/) - Customer churn prediction
+13. [Lead Scoring](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/lead_scoring/) - Sales lead qualification
+14. [Campaign Optimization](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/campaign_opt/) - Marketing campaign optimization
+15. [Churn Prediction](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/churn/) - Customer churn prediction
 
 ### Natural Language Processing
-16. [Sentiment Analysis](./projects/sentiment/) - Text sentiment classification
-17. [Document Processing](./projects/document_processing/) - Automated document processing
-18. [Chatbot](./projects/chatbot/) - Conversational AI assistant
+16. [Sentiment Analysis](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/sentiment/) - Text sentiment classification
+17. [Document Processing](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/document_processing/) - Automated document processing
+18. [Chatbot](https://github.com/ArmandoSaboia/mlops-projects/tree/mlops-repo/projects/chatbot/) - Conversational AI assistant
 
 ## 🚀 Quick Start
 ### 1. Clone the Repository
