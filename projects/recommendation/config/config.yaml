@@ -1,0 +1,45 @@
+# Model Configuration
+model:
+  name: recommendation_engine
+  architecture: neural_collaborative_filtering
+  params:
+    embedding_dim: 64
+    num_layers: 3
+    dropout: 0.1
+    learning_rate: 0.001
+
+# Data Configuration
+data:
+  batch_size: 256
+  num_workers: 4
+  sources:
+    - user_interactions
+    - product_catalog
+    - user_profiles
+
+# Feature Store Configuration
+feast:
+  feature_store_yaml: "feature_store.yaml"
+  entity_key: "user_id"
+  features:
+    - user_embedding
+    - product_embedding
+    - interaction_history
+
+# Serving Configuration
+serving:
+  max_recommendations: 10
+  cache_ttl: 3600
+  batch_inference: true
+  tensorflow_serving_port: 8501
+
+# Monitoring Configuration
+monitoring:
+  metrics:
+    - hit_rate
+    - ndcg
+    - diversity_score
+    - coverage
+  elasticsearch:
+    host: localhost
+    port: 9200 

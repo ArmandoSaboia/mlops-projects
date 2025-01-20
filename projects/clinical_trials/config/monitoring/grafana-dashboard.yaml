@@ -1,0 +1,30 @@
+apiVersion: 1
+
+providers:
+- name: 'Clinical Trials Dashboards'
+  orgId: 1
+  folder: 'Clinical Trials'
+  type: file
+  options:
+    path: /var/lib/grafana/dashboards
+
+dashboards:
+  - name: 'Trial Progress Overview'
+    panels:
+      - title: 'Enrollment Progress'
+        type: gauge
+        datasource: Prometheus
+        targets:
+          - expr: 'sum(clinical_trial_enrollments_total) by (trial_id)'
+      
+      - title: 'Adverse Events Trend'
+        type: graph
+        datasource: Prometheus
+        targets:
+          - expr: 'rate(clinical_trial_adverse_events[1h])'
+      
+      - title: 'Site Performance Heatmap'
+        type: heatmap
+        datasource: Prometheus
+        targets:
+          - expr: 'clinical_trial_site_performance' 

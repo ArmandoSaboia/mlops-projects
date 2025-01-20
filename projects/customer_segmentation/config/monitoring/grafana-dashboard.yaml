@@ -1,0 +1,36 @@
+apiVersion: 1
+
+providers:
+- name: 'Customer Segmentation Dashboards'
+  orgId: 1
+  folder: 'Customer Analytics'
+  type: file
+  options:
+    path: /var/lib/grafana/dashboards
+
+dashboards:
+  - name: 'Customer Segments Overview'
+    panels:
+      - title: 'Segment Distribution'
+        type: piechart
+        datasource: Prometheus
+        targets:
+          - expr: 'customer_segment_size'
+      
+      - title: 'Segment Metrics Comparison'
+        type: heatmap
+        datasource: Prometheus
+        targets:
+          - expr: 'customer_segment_metrics'
+      
+      - title: 'Model Performance'
+        type: gauge
+        datasource: Prometheus
+        targets:
+          - expr: 'segmentation_silhouette_score'
+      
+      - title: 'Processing Time'
+        type: graph
+        datasource: Prometheus
+        targets:
+          - expr: 'rate(segmentation_processing_seconds_sum[5m])' 

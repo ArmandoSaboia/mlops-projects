@@ -1,0 +1,46 @@
+name: Market Data Pipeline
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes
+  workflow_dispatch:
+
+jobs:
+  process_market_data:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+    
+    - name: Install dependencies
+      run: |
+        cd projects/market_analysis
+        pip install -r requirements.txt
+    
+    - name: Fetch market data
+      run: |
+        python src/data_pipeline/fetch_data.py \
+          --symbols @configs/symbols.txt \
+          --timeframe 15min
+    
+    - name: Process and store data
+      run: |
+        python src/data_pipeline/process_data.py \
+          --input-path data/raw \
+          --output-path data/processed
+    
+    - name: Generate signals
+      run: |
+        python src/analysis/generate_signals.py \
+          --model-path models/latest \
+          --data-path data/processed
+    
+    - name: Upload metrics
+      uses: actions/upload-artifact@v3
+      with:
+        name: market-metrics
+        path: metrics/ 

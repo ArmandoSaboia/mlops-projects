@@ -1,0 +1,23 @@
+groups:
+- name: credit_risk_monitoring
+  rules:
+  - alert: HighRiskApplications
+    expr: |
+      sum(rate(credit_risk_applications_total{risk_score>0.8}[1h])) 
+      / 
+      sum(rate(credit_risk_applications_total[1h])) > 0.3
+    for: 15m
+    labels:
+      severity: warning
+    annotations:
+      summary: High proportion of high-risk applications
+      description: Over 30% of applications in the last hour are high-risk
+
+  - alert: ModelLatencyHigh
+    expr: histogram_quantile(0.95, rate(credit_risk_prediction_duration_seconds_bucket[5m])) > 1
+    for: 10m
+    labels:
+      severity: warning
+    annotations:
+      summary: Model prediction latency is high
+      description: 95th percentile of prediction latency is above 1 second 
