@@ -1,0 +1,36 @@
+apiVersion: 1
+
+providers:
+- name: 'Inventory Management Dashboards'
+  orgId: 1
+  folder: 'Inventory'
+  type: file
+  options:
+    path: /var/lib/grafana/dashboards
+
+dashboards:
+  - name: 'Inventory Overview'
+    panels:
+      - title: 'Stock Levels by Warehouse'
+        type: heatmap
+        datasource: Prometheus
+        targets:
+          - expr: 'inventory_stock_level'
+      
+      - title: 'Stockout Events'
+        type: timeseries
+        datasource: Prometheus
+        targets:
+          - expr: 'rate(inventory_stockouts_total[24h])'
+      
+      - title: 'Forecast Accuracy'
+        type: gauge
+        datasource: Prometheus
+        targets:
+          - expr: 'avg(inventory_forecast_accuracy) by (metric)'
+      
+      - title: 'Reorder Patterns'
+        type: barchart
+        datasource: Prometheus
+        targets:
+          - expr: 'sum(inventory_reorders_total) by (reason)' 
