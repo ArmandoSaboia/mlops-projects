@@ -15,7 +15,7 @@ setup(
         "pytest==7.4.3",
         "python-dotenv==1.0.0",
         "joblib==1.3.2",
-        "pyyaml==6.0.1"
+        "pyyaml==6.0.1",
+        "holidays>=0.36" 
     ],
-    python_requires=">=3.8",
-) 
+)
